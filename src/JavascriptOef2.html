@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+
+var geboortejaar= parseInt(prompt("Geef uw geboortejaar"));
+
+var now = new Date();
+var huidigjaar = now.getFullYear();
+
+var output;
+
+var leeftijd = huidigjaar - geboortejaar;
+
+if (leeftijd < 18) {
+  output = "U bent te jong voor deze website.";
+
+} else {
+  output = "U mag deze website bezoeken.";
+}
+
+
+document.write("<br><br><br><h1 style=\"text-align: center\">" + output + "</h1>");
+
+
+</script>
+
+<body>
+
+</body>
+</html>

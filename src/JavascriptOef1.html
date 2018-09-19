@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+
+/*
+var number1 = prompt("Eerste getal: ");
+number1 = parseInt(number1);
+var number2 = prompt("Tweede getal: ");
+number2 = parseInt(number2);
+
+var sum = number1 + number2;
+*/
+
+// document.write(`${number1} + ${number2} = ${sum}`);
+
+
+var voornaam = prompt("Geef voornaam: ");
+
+var achternaam = prompt("Geef achternaam: ");
+
+var geboortejaar = prompt("Geef uw geboortejaar: ");
+
+geboortejaar = parseInt(geboortejaar);
+
+var leeftijd = 2018 - geboortejaar;
+
+
+var aantal_mannen = parseInt(prompt("Geef het aantal mannen in de kamer: "));
+
+var aantal_vrouwen = parseInt(prompt("Geef het aantal vrouwen in de kamer: "));
+
+var totaal_mensen = aantal_mannen + aantal_vrouwen;
+
+var now = new Date();
+var hour = now.getHours();
+
+var begroeting;
+
+if (hour < 12) {
+  begroeting = "Goedemorgen";
+} else {
+  begroeting = "Goedenamiddag";
+}
+
+document.write("<h1>" + begroeting + " " + voornaam + " " + achternaam +"</h1>");
+
+document.write(`<br><br> U bent ${leeftijd} jaar oud.<br><br>`);
+
+document.write(`Het aantal mannen: ${aantal_mannen} <br><br>Het aantal vrouwen:
+  ${aantal_vrouwen}<br><br>Het totaal aantal mensen: ${totaal_mensen}`);
+
+
+</script>
+
+<body>
+
+</body>
+</html>
